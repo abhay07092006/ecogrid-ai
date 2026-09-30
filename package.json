@@ -1,0 +1,12 @@
+{
+  "name": "ecogrid-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EcoGrid AI - Smart Microgrid & Renewable Energy Platform (SIH Problem Statement: SIH26200)",
+  "scripts": {
+    "dev": "node start-dev.js",
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server start",
+    "build": "npm --prefix client run build"
+  }
+}
