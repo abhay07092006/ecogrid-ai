@@ -569,6 +569,10 @@ app.get('/api/calculator/savings', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`⚡ EcoGrid AI Backend running on http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`⚡ EcoGrid AI Backend running on http://localhost:${PORT}`);
+  });
+}
+
+export default app;
